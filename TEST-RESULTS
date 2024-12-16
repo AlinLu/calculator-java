@@ -1,0 +1,16 @@
+## Testare Black Box
+
+| *Expresie* | *Rezultat așteptat* | *Rezultat obținut* | *Observație*          |
+|------------|---------------------|--------------------|-----------------------|
+| 4+5        | 9                   | 9                  | OK                    |
+| 10-3       | 7                   | 7                  | OK                    |
+| 5*2        | 10                  | 10                 | OK                    |
+| 10+5*4     | 30                  | 30                 | OK                    |
+| 10/0       | ERROR               | Exception          | Lipsă tratare.        |
+| 4+-5       | -1                  | ERROR              | Problema cu parsarea. |
+| Infinity-1 | Infinity            | Infinity           | OK                    |
+
+### Observații
+1. Programul nu gestionează cazurile de diviziune la zero, ceea ce duce la o excepție runtime.
+2. Cum am precizat si in README. expresiile cu semne multiple (e.g., 4+-5) nu sunt corect interpretate.
+3. Lipsă verificări suplimentare pentru expresii nevalide sau incomplete.
