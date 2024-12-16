@@ -1,0 +1,8 @@
+Ce nu merge chiar perfect în cod:
+Prima problemă mare: Variabila aia de rezultat final (finalResult) este cam instabilă. Adică dacă doi oameni ar folosi calculatorul în același timp, s-ar putea să apară rezultate ciudate.
+Metodele au nişte denumiri ciudate. De exemplu, metoda "ToString()" ar trebui scrisă "toString()" - cam toată lumea care scrie Java face așa.
+Calculatorul nu verifică ce primește/input-ul, continua rularea fără să verifice dacă datele sunt bune.
+Sunt foarte multe variabile care fac codul greu de citit.
+Când apare o eroare, doar zice "ERROR" și cam atât. Ar trebui prinse erorile si raportate cu mesaj specific, precizanad linia exacta
+Metoda de calcul (Calculate) e extrem de complicată. Ar trebui să fie mai simplă și mai clară.
+Sunt bucăți de cod care se repetă de mai multe ori, ceea ce nu e bine - înseamnă că ar trebui scrise in niste functii mai generale, reutilizabile
