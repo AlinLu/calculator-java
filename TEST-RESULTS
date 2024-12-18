@@ -1,16 +1,25 @@
-## Testare Black Box
+## In cazurile urmatoare de calcul am depistat erori:
 
-| *Expresie* | *Rezultat așteptat* | *Rezultat obținut* | *Observație*          |
-|------------|---------------------|--------------------|-----------------------|
-| 4+5        | 9                   | 9                  | OK                    |
-| 10-3       | 7                   | 7                  | OK                    |
-| 5*2        | 10                  | 10                 | OK                    |
-| 10+5*4     | 30                  | 30                 | OK                    |
-| 10/0       | ERROR               | Exception          | Lipsă tratare.        |
-| 4+-5       | -1                  | ERROR              | Problema cu parsarea. |
-| Infinity-1 | Infinity            | Infinity           | OK                    |
+## Eroare unde se repeta operatorul de calcul
+2--3
+ERROR
 
-### Observații
-1. Programul nu gestionează cazurile de diviziune la zero, ceea ce duce la o excepție runtime.
-2. Cum am precizat si in README. expresiile cu semne multiple (e.g., 4+-5) nu sunt corect interpretate.
-3. Lipsă verificări suplimentare pentru expresii nevalide sau incomplete.
+## Cand dorim sa calculam infinit - infinit va da eroare
+infinity-infinity
+ERROR
+
+## In toate operatiile cu paranteze, acolade, paranteze patrate a dat eroare
+(2+3)-5
+ERROR
+
+## La calcularea unei operatii in care avem o littera va da eroare
+a-2
+ERROR
+
+## La toate impartirile cu 0 rezultatul e "Infinity"
+1/0
+Infinity
+
+## La calcularea infinit - 1 va da eroare
+infinity-1
+ERROR
